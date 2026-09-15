@@ -1,0 +1,11 @@
+{
+  "courier_previous_delivery_count": 1007.0,
+  "courier_avg_delivery_duration": 96.83991228070175,
+  "courier_median_delivery_duration": 76.0,
+  "courier_std_delivery_duration": 84.4859434384179,
+  "courier_avg_recent_delivery_duration": 83.5,
+  "courier_on_time_rate": 0.779291553133515,
+  "route_previous_count": 132.0,
+  "route_avg_delivery_duration": 95.47174447174449,
+  "route_avg_recent_delivery_duration": 84.8
+}
