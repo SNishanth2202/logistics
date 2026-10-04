@@ -1,0 +1,73 @@
+================================================================================
+DATASET INVENTORY REPORT
+================================================================================
+
+FILE: city_weather.csv
+  Rows              : 55,176
+  Columns           : 14
+  Column names      : city_id, date, hour, temp, wind_speed, description, precip, humidity, visibility, pressure, chanceofrain, chanceoffog, chanceofsnow, chanceofthunder
+  Duplicate rows    : 0
+  Total missing     : 0
+  Missing by col    : None
+  Date ranges       : date: 2019-01-01 00:00:00 -> 2019-02-15 00:00:00
+  Unique IDs        : city_id: 49
+
+FILE: drivers_table.csv
+  Rows              : 1,300
+  Columns           : 9
+  Column names      : driver_id, name, gender, age, experience, driving_style, ratings, vehicle_no, average_speed_mph
+  Duplicate rows    : 0
+  Total missing     : 75
+  Missing by col    : {'gender': 23, 'driving_style': 52}
+  Date ranges       : N/A
+  Unique IDs        : driver_id: 1300
+
+FILE: routes_table.csv
+  Rows              : 2,352
+  Columns           : 5
+  Column names      : route_id, origin_id, destination_id, distance, average_hours
+  Duplicate rows    : 0
+  Total missing     : 0
+  Missing by col    : None
+  Date ranges       : N/A
+  Unique IDs        : route_id: 2352 | origin_id: 49 | destination_id: 49
+
+FILE: routes_weather.csv
+  Rows              : 425,712
+  Columns           : 13
+  Column names      : route_id, Date, temp, wind_speed, description, precip, humidity, visibility, pressure, chanceofrain, chanceoffog, chanceofsnow, chanceofthunder
+  Duplicate rows    : 0
+  Total missing     : 0
+  Missing by col    : None
+  Date ranges       : Date: 2019-01-01 00:00:00 -> 2019-02-15 00:00:00
+  Unique IDs        : route_id: 2352
+
+FILE: traffic_table.csv
+  Rows              : 2,597,913
+  Columns           : 5
+  Column names      : route_id, date, hour, no_of_vehicles, accident
+  Duplicate rows    : 0
+  Total missing     : 1152
+  Missing by col    : {'no_of_vehicles': 1152}
+  Date ranges       : date: 2019-01-01 00:00:00 -> 2019-02-15 00:00:00
+  Unique IDs        : route_id: 2352
+
+FILE: truck_schedule_table.csv
+  Rows              : 12,308
+  Columns           : 5
+  Column names      : truck_id, route_id, departure_date, estimated_arrival, delay
+  Duplicate rows    : 0
+  Total missing     : 0
+  Missing by col    : None
+  Date ranges       : departure_date: 2019-01-01 07:00:00 -> 2019-02-12 07:00:00
+  Unique IDs        : truck_id: 1249 | route_id: 2352
+
+FILE: trucks_table.csv
+  Rows              : 1,300
+  Columns           : 5
+  Column names      : truck_id, truck_age, load_capacity_pounds, mileage_mpg, fuel_type
+  Duplicate rows    : 0
+  Total missing     : 97
+  Missing by col    : {'load_capacity_pounds': 57, 'fuel_type': 40}
+  Date ranges       : N/A
+  Unique IDs        : truck_id: 1300
