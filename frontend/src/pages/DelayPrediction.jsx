@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { 
   AlertTriangle, 
   MapPin, 
@@ -104,6 +104,7 @@ export default function DelayPrediction() {
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState(null);
   const [error, setError] = useState(null);
+  const resultRef = useRef(null);
 
   const handleChange = (e) => {
     const { name, value, type } = e.target;
@@ -129,9 +130,13 @@ export default function DelayPrediction() {
 
       const res = await predictDelay(record);
       setResult(res);
-      // Smooth scroll to result
+
+      // Scroll the actual app scroll container to the result after it renders.
       setTimeout(() => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        resultRef.current?.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+        });
       }, 100);
     } catch (err) {
       setError(err.message || 'Delay prediction failed. Ensure FastAPI is running.');
@@ -190,11 +195,6 @@ export default function DelayPrediction() {
           message={error}
           onRetry={handlePredict}
         />
-      )}
-
-      {/* Prediction Output Section (renders when result is available) */}
-      {result && (
-        <PredictionResult result={result} inputRecord={formData} />
       )}
 
       {/* Multi-Section Telemetry Form */}
@@ -683,6 +683,13 @@ export default function DelayPrediction() {
         </div>
 
       </form>
+
+      {/* Prediction Output Section - rendered below the form so it is visible after submission */}
+      {result && (
+        <div ref={resultRef} className="scroll-mt-6">
+          <PredictionResult result={result} inputRecord={formData} />
+        </div>
+      )}
     </div>
   );
 }
