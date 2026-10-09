@@ -1,0 +1,21 @@
+{
+  "load_capacity_pounds": 6000.0,
+  "mileage_mpg": 21.0,
+  "truck_age": 9.0,
+  "driver_age": 48.0,
+  "experience": 12.0,
+  "driver_ratings": 6.0,
+  "average_speed_mph": 57.31,
+  "distance": 755.21,
+  "average_hours": 15.1,
+  "weather_temp": 58.0,
+  "weather_wind_speed": 7.75,
+  "weather_precip": 0.0,
+  "weather_humidity": 72.25,
+  "weather_visibility": 6.0,
+  "weather_pressure": 1015.25,
+  "weather_chanceofrain": 0.0,
+  "weather_chanceoffog": 0.0,
+  "weather_chanceofsnow": 0.0,
+  "weather_chanceofthunder": 0.0
+}

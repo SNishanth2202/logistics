@@ -1,0 +1,42 @@
+{
+  "numeric": [
+    "delay_prob",
+    "capacity_utilization",
+    "is_overweight",
+    "distance",
+    "average_hours",
+    "hour",
+    "day_of_week",
+    "day_of_month",
+    "month",
+    "is_weekend",
+    "is_peak_hour",
+    "truck_age",
+    "load_capacity_pounds",
+    "mileage_mpg",
+    "driver_age",
+    "experience",
+    "driver_ratings",
+    "average_speed_mph",
+    "weather_temp",
+    "weather_wind_speed",
+    "weather_precip",
+    "weather_humidity",
+    "weather_visibility",
+    "weather_chanceofrain",
+    "weather_chanceoffog",
+    "weather_chanceofsnow",
+    "weather_chanceofthunder",
+    "traffic_vehicles",
+    "traffic_accident",
+    "truck_trip_count_hist",
+    "truck_delay_rate_hist",
+    "route_trip_count_hist",
+    "route_delay_rate_hist"
+  ],
+  "categorical": [
+    "fuel_type",
+    "driving_style",
+    "truck_age_category"
+  ]
+}
